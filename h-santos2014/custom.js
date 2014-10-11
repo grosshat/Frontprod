@@ -1,7 +1,7 @@
 /* affix the navbar after scroll below header */
 Mirai.query('#hotel-menu').affix({
       offset: {
-        top: Mirai.query(".header-page").height() + Mirai.query("#hotel-menu").height()
+        top: Mirai.query("#showcase").height() + Mirai.query("#hotel-menu").height()
       }
 });	
 
@@ -17,5 +17,5 @@ Mirai.query('.menu-anchor').click(function(evt){
   evt.preventDefault();
   var link = Mirai.query(this).attr('href');
   var pos = Mirai.query(link).offset().top;
-  Mirai.query('html,body').animate({scrollTop:pos+20},700);
+  Mirai.query('html,body').animate({scrollTop:pos-40},700);
 });	
