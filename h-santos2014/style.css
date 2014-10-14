@@ -433,7 +433,6 @@ ul#menu_web .tree .sub-menu li.location-santander-menu { background-image: url('
 }
 .modal-header h3 {
     display: block;
-    padding: 5px;
     font-size: 20px;
     text-align:left;
     text-shadow:none;
@@ -456,7 +455,11 @@ ul#menu_web .tree .sub-menu li.location-santander-menu { background-image: url('
 #booking-modal p {
     padding:20px;
     font-size:14px;
-    text-align:center;    
+    text-align:center;
+    line-height: 1.5;
+    width: 75%;
+    margin: 0 auto !important;
+    color: #666;
 }
 
 #booking-modal .engine_mashup > div form .control-group label {color: #5E5E5E;}
