@@ -49,7 +49,9 @@ h2 .subhead { font-size: .65em; }
 h3 .subhead { font-size: .55em;}
 
 a {color: #46b0b5;}
-a:hover {text-decoration:underline;}
+a:hover {text-decoration:none;}
+
+a h2, a h3 { color: #333;}
 
 p {
     line-height: 1.2em;
@@ -1163,7 +1165,7 @@ section {
     position: absolute;
     left: 0px;
     right: 0px;
-    bottom: 20%;
+    bottom: 25%;
     border: 4px solid rgb(255, 255, 255);
     text-align: center;
     margin: 0px auto;
