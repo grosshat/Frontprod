@@ -1,104 +1,90 @@
-<div class="header-page">
-	<img src="/files/header-madrid.jpg" alt="{1}" />
-	<h1 class="title-header">{1}</h1>
-	<div class="main-links pd80-bottom">
-		<a href="#menu-anchor1" class="menu-anchor btn btn-large btn-header" title="{2}">{2}</a>
-		<a href="#menu-anchor2" class="menu-anchor btn btn-large btn-header" title="{3}">{3}</a>
+<section id="showcase">
+	<figure>[get_image id="820" alt="{1}"]</figure>
+	<h2>{1}</h2>
+	<div class="main-links">
+		<a href="#intro" class="menu-anchor btn btn-large btn-header" title="{2}">{2}</a>
+		<a href="#hotels" class="menu-anchor btn btn-large btn-header" title="{3}">{3}</a>
 	</div>
-</div>
+</section>
 
-<div class="pd50" id="menu-anchor1">
+<section id="intro">
 	<div class="container">
-		<div class="header-intro pd50">
-			<h2 class="x-large">{4}</h1>
-			<h3>{5}</h3>
-		</div>
+		<h2>{4} <span class="subhead">{5}</h2>
 
-		<div class="row-fluid">
-			<div class="bd-top bd-bottom"> <img src="/files/prado01.jpg" alt="" /> </div>
-		</div>
-
-		<div class="row-fluid">
-			<div class="span6">
-				<div class="bd-right bd-top"> <img class="thumb" src="/files/thyssen01.jpg" alt="" /> </div>
-			</div>
-
-			<div class="span6">
-				<div class="bd-left bd-top"> <img class="thumb" src="/files/reina-sofia01.jpg" alt="" /> </div>
-			</div>
-		</div>
-		<div class="main-inner-links">
-			<a href="{23}" class="btn btn-large btn-info">{6}</a>
+		<ul class="row">
+			<li class="span12 bt-top bd-bottom">
+				<figure>[get_image id="326" alt="{4}"]</figure>
+			</li>
+			<li class="span6 bd-right bd-top">
+				<figure>[get_image id="324" alt="{4}"]</figure>
+			</li>
+			<li class="span6 bd-left bd-top">
+				<figure>[get_image id="325" alt="{4}"]</figure>
+			</li>
+		</ul>
+		<div class="main-actions">
+			<a href="[get_page page="17"]" class="btn btn-large btn-info" title="{6}">{6}</a>
 		</div>
 	</div>
-</div>
+</section>
 
-<div class="pd50 color_lightgrey">
+<section id="park" class="light-grey">
 	<div class="container">
-		<div class="header-intro pd25">
-			<h2 class="x-large">{7}</h1>
-			<h3>{8}</h3>
-		</div>
+		<h2>{7} <span class="subhead">{8}</span></h2>
 	</div>
 
-	<div class="row-fluid">
-		<img src="/files/retiro01.jpg" alt="" />
+	<figure>[get_image id="351" alt="{7}"]</figure>
+
+	<div class="main-actions">
+		<a href="[get_page page="18"]" class="btn btn-large btn-info" title="{9}">{9}</a>
 	</div>
+</section>
 
-	<div class="main-inner-links color_lightgrey">
-		<a href="{24}" class="btn btn-large btn-info">{9}</a>
-	</div>
-</div>
-
-
-<div class="pd50">
+<section id="ifema">
 	<div class="container">
-		<div class="row-fluid">
-			<div class="span4 pd25">
-				<h2>{10}</h1>
-				<h3>{11}</h3>
-			</div>
-			<div class="span7 offset1 pd25">
-				<div class="bd-all"> <img class="thumb" src="/files/ifema01.jpg" alt="" /> </div>
-			</div>
-		</div>
-		<div class="main-inner-links">
-			<a href="{25}" class="btn btn-large btn-info">{12}</a>
-		</div>
-	</div>
-</div>
-
-<div class="pd50 color_lightgrey" id="menu-anchor2">
-	<div class="container">
-		<div class="header-intro pd25">
-			<h2 class="x-large">{13}</h1>
-		</div>
-		<div class="row-fluid">
+		<div class="row">
 			<div class="span4">
-				<a class="col-hotels" href="{23}" title="{14}">
-					<img src="/files/praga-madrid.jpg" />
+				<h2 class="align-right">{10}</h2>
+				<p class="align-right">{11}</p>
+				<div class="main-actions align-right">
+					<a href="[get_page page="19"]" class="btn btn-large btn-info" title="{12}">{12}</a>
+				</div>
+			</div>
+			<div class="span7 offset1">
+				<figure>[get_image id="368" alt="{10}"]</figure>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="hotels" class="light-grey">
+	<div class="container">
+		<h2>{13}</h2>
+		<div class="row">
+			<div class="span4">
+				<a class="col-hotels" href="[get_page page="17"]" title="{14}">
+					<figure>[get_image id="378" alt="{14}"]</figure>
 					<h3>{14}</h3>
 					<p>{15}</p>
 					<p><span class="text-link">{16}<span></p>
 				</a>
 			</div>
 			<div class="span4">
-				<a class="col-hotels" href="{24}" title="{17}">
-					<img src="/files/agumar-madrid.jpg" />
+				<a class="col-hotels" href="[get_page page="18"]" title="{17}">
+					<figure>[get_image id="375" alt="{17}"]</figure>
 					<h3>{17}</h3>
 					<p>{18}</p>
 					<p><span class="text-link">{19}<span></p>
 				</a>
 			</div>
 			<div class="span4">
-				<a class="col-hotels" href="{25}" title="{20}">
-					<img src="/files/maydrit-madrid.jpg" />
+				<a class="col-hotels" href="[get_page page="19"]" title="{20}">
+					<figure>[get_image id="377" alt="{20}"]</figure>
 					<h3>{20}</h3>
 					<p>{21}</p>
 					<p><span class="text-link">{22}<span></p>
 				</a>
 			</div>
-		
 		</div>
 	</div>
-</div>
+</section>

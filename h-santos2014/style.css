@@ -48,7 +48,7 @@ h2 .subhead { font-size: .65em; }
 
 h3 .subhead { font-size: .55em;}
 
-a {color: #46b0b5;}
+a {color: #0192b5;}
 a:hover {text-decoration:none;}
 
 a h2, a h3 { color: #333;}
@@ -74,7 +74,7 @@ p {
     height:55px;
 }
 
-#footer { background:#DFDFDF; }
+#footer { background:#efefeb; }
 
 #footer .content { padding:25px 0; }
 
@@ -88,7 +88,7 @@ p {
 
 
 /*--------------------------------- QTRANSLATE ---------------------------------*/
-.widget_qtranslate {line-height:60px;}
+.widget_qtranslate {padding-top:12px;}
 
 .widget_qtranslate select {
     width: 100px;
@@ -1116,11 +1116,17 @@ section {
 #showcase,
 #hotel-menu { padding:0;}
 
-.last-section { padding-bottom: 0;}
+.last-section, #shuttle { padding-bottom: 0;}
 
 #intro { padding: 50px 0;}
 
-#briefing { padding: 40px 0; }
+#shuttle {
+    padding: 60px 0 0 0;
+}
+
+#subscribe .content {
+    padding: 20px;
+}
 
 #showcase { 
     position: relative;
@@ -1155,6 +1161,31 @@ section {
 
 #showcase h2:after {width:30%;}
 
+.headline {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    right: 0;
+}
+
+.headline .highlight {
+    text-align:left;
+    padding-top: 20px;
+}
+
+.headline .highlight p, .headline .highlight a {
+    color: #fff;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px #000;
+    margin: 0 0 5px 0 !important;
+    font-weight: bold;
+}
+
+.headline .stars {
+    display: inline-block;
+    margin: 0 0 5px 0;
+}
+
 .pic-testimonial { position: relative; }
 
 .pic-testimonial .persona {
@@ -1182,6 +1213,19 @@ section {
     margin: 0 auto 20px auto !important;
     text-align: center;
 }
+
+#subscribe {
+    text-align: left;
+}
+
+#subscribe h2 {
+    font-size: 1.7em;
+}
+
+#subscribe .subhead {
+    margin-top: 0;
+}
+
 /* ==========================================================================
    Pages, Sections
    ========================================================================== */
@@ -1212,19 +1256,16 @@ section {
     font-family: "Open sans", Arial;
 }
 .home-box { 
-    border: 1px solid #CCC;
-    margin: 0 4%;
-    padding:2%;
+    margin:0 2%;
     position:relative;
     display:block;
-   
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
-.home-box:hover {border: 1px solid #46b0b5; background: #46b0b5; text-decoration:none;}
-.home-box:hover img {opacity:0.1;}
+
+.home-box:hover img {opacity:0.9;}
 .home-box h3 {
     padding:6%;
     text-align:center;
@@ -1239,23 +1280,6 @@ section {
     transition: all .2s ease-in-out;
 }
 
-.home-box .zoomlink {
-    position:absolute;
-    width:40px;
-    height:40px;
-    top:-15%;
-    left:43%;
-    background: none;
-    z-index:10000;
-    opacity:0;
-    
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-}
-
-.home-box:hover .zoomlink {top:28%; opacity:1; background: /*url("/files/icon-link.png")*/ url("/files/icon-viewmore.png"); no-repeat center center;}
 .home-box:hover h3 {background:#46b0b5; text-decoration:none}
 
 /* Pre-footer bar */
@@ -1546,7 +1570,7 @@ a.item-link {
     text-shadow: 0 1px 3px #000;
 }
 
-.box-hotel > a i.stars {
+i.stars {
     background: url("/files/sprite-stars.png") no-repeat 0 0;
     width:80px;
     margin:2px auto 15px auto;
@@ -1554,14 +1578,14 @@ a.item-link {
     height:14px;
     
 }
-.box-hotel > a i.stars.four {
+i.stars.four {
     width: 50px;
 }
-.box-hotel > a i.stars.five {
+i.stars.five {
     background-position: 0 -12px;
     width: 65px;
 }
-.box-hotel > a i.stars.five-gl {
+i.stars.five-gl {
     background-position: 0 -25px;
     width: 80px;
 }
