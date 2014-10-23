@@ -1,13 +1,15 @@
 <section id="showcase">
-	[get_image id="166"]
+	[get_image id="2610"]
 	<div class="container headline">
 		<div class="row">
 			<div class="span4">
 				[mi_exec_widget id=mirai_engine]
 			</div>
-			<div class="span5 offset2 highlight">
-				<p><a href="">Hotel Nixe Palace <i class="stars four"></i></a></p>
-				<p><a href="">Mallorca</a></p>
+			<div class="span4 offset2 highlight">
+				<p>
+					<a href="[get_page page="19"]">Hotel Praga <i class="stars four"></i>
+					<span>Un hotel de lujo en pleno centro de Madrid</span></a>
+				</p>
 			</div>
 		</div>
 	</div>
@@ -15,9 +17,22 @@
 
 <section id="intro" class="light-grey">
 	<div class="container">
-		<div class="span6 banner-home"> <a href="#"> <img src="files/bannerhome-offers01.jpg" /> </a></div>
-		<div class="span6">
-			<h3>Ventajas al reservar aqui</h3> 
+		<div class="span6 banner">
+			<a href="[get_page page="42"]">
+				[get_image id="2577"]
+				<div class="banner-with-caption">
+					<span class="title">Reserva anticipada</span>
+					<span class="link">Ver ofertas</span>
+				</div>
+			</a>
+		</div>
+		<div class="span6 benefits">
+			<h3>Ventajas al reservar aqui</h3>
+			<ul>
+				<li>10% de descuento <span>+</span></li>
+				<li>Wifi gratis</li>
+			</ul>
+			<p><a href="[get_page page="16"]" title="">Encuentra tu hotel en 9 destinos con encanto en España »</a></p>
 		</div>
 	</div>
 </section>
@@ -26,28 +41,28 @@
 	<div class="container">
 		<div class="row">
 			<div class="span3"> 
-				<a class="home-box" href="http://www.bewedding.es/" target="_blank"> 
+				<a class="home-box" href="[get_page page="16"]" target="_blank"> 
 					<img src="/files/beweddings.jpg" alt="" />
 					<h3>Hoteles</h3>
 				</a>
 			</div>
 
 			<div class="span3"> 
-				<a class="home-box" href="/hoteles/"> 
+				<a class="home-box" href="[get_page page="29"]"> 
 					<img src="/files/beach.jpg" alt="" />
 					<h3>Destinos</h3>
 				</a>
 			</div>
 
 			<div class="span3"> 
-				<a class="home-box" href="/spa/"> 
+				<a class="home-box" href="[get_page page="41"]"> 
 					<img src="/files/spa.jpg" alt="" />
 					<h3>Spa & Belleza</h3>
 				</a>
 			</div>
 
 			<div class="span3"> 
-				<a class="home-box" href="/eventos/"> 
+				<a class="home-box" href="[get_page page="40"]"> 
 					<img src="/files/events.jpg" alt="" />
 					<h3>Negocios y eventos</h3>
 				</a>
@@ -59,12 +74,19 @@
 <section id="subscribe">
 	<div class="container">
 		<div class="row">
-			<div class="span6 light-green content">
-				<h2>Newsletter <span class="subhead">Introduce tu email y empieza a recibir nuestras novedades</span></h2>
+			<div class="span6 newsletter">
+				<h2>Newsletter</h2>
+				<p>Introduce tu email y empieza a recibir nuestras novedades</p>
+				[contact-form-7 id="2559" title="Newsletter"]
 			</div>
-			<div class="span5 offset1 content">
+			<div class="span5 offset1 content light-green club">
 				<h2>Club Hoteles Santos</h2>
-				<p>Descubre las ventajas de pertenecer al club</p>
+				<ul>
+					<li>Puntos para canjear por estancias</li>
+					<li>Descuentos especiales</li>
+					<li>Acceso gratuito al gimnasio</li>
+				</ul>
+				<p><a href="">Descubre las ventajas de pertenecer al club »</a></p>
 			</div>
 		</div>
 	</div>
@@ -73,5 +95,6 @@
 <section id="news" class="light-grey">
 	<div class="container">
 		<h3>Noticias</h3>
+		[mi_exec_widget id=mirai-recent-posts]
 	</div>
 </section>

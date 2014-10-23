@@ -1,11 +1,11 @@
 /*
  * Smooth scrolling for nav sections.
  */
-Mirai.query('.menu-anchor, .header-photos, .header-reviews a').click(function(evt){
+Mirai.query('.menu-anchor, .header-photos, .header-reviews a, .nav-main a').click(function(evt){
   evt.preventDefault();
   var link = Mirai.query(this).attr('href');
   var pos = Mirai.query(link).offset().top;
-  Mirai.query('html,body').animate({scrollTop:pos-50},700);
+  Mirai.query('html,body').animate({scrollTop:pos-100},700);
 }); 
 
 /*
